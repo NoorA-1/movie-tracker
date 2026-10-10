@@ -71,7 +71,7 @@ async function downloadTmdbPoster(posterPath) {
     throw new Error("TMDB returned an invalid poster path");
   }
 
-  const response = await fetch(`https://image.tmdb.org/t/p/w500${posterPath}`, {
+  const response = await fetch(`https://image.tmdb.org/t/p/w780${posterPath}`, {
     signal: AbortSignal.timeout(20_000),
     redirect: "error",
   });
