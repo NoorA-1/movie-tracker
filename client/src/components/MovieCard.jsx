@@ -35,7 +35,9 @@ export default function MovieCard({
         <p className="movie-meta">
           {movie.releaseDate.slice(0, 4)}
           {" · "}
-          {movie.rating === null ? "Unrated" : `${movie.rating} / 10`}
+          {movie.rating === null
+            ? "Unrated"
+            : `${movie.rating.toFixed(1)} / 10`}
         </p>
 
         <p className="movie-genres">
