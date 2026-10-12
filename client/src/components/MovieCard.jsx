@@ -66,12 +66,12 @@ export default function MovieCard({
             Delete
           </button>
 
-          {/* <PosterControls
+          <PosterControls
             movie={movie}
             disabled={disabled}
             onChanged={onPosterChanged}
             onBusyChange={onPosterBusyChange}
-          /> */}
+          />
         </div>
       </div>
     </article>
